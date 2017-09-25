@@ -14,6 +14,7 @@ body {
 
 
 /*nav bar*/
+
 nav {
     color: #ccc;
 }
@@ -85,6 +86,7 @@ nav {
 
 /********************************************/
 
+
 /*about me */
 
 .wrapper {
@@ -132,7 +134,9 @@ hr {
     padding: 10px 10px 10px 0;
 }
 
+
 /************************************/
+
 
 /*contact me form*/
 
@@ -171,6 +175,7 @@ textarea {
     padding: 10px;
     max-width: 590px;
     max-height: 245px;
+    border: 1px solid #ccc;
 }
 
 input[type=submit] {
@@ -194,6 +199,7 @@ label {
 
 
 /*About Me & Contact Page & Portfolio */
+
 
 /*connect with me*/
 
@@ -231,7 +237,9 @@ label {
     width: 65px;
 }
 
+
 /********************************************/
+
 
 /* portfolio page */
 
@@ -297,12 +305,13 @@ figure img:hover {
     vertical-align: middle;
     font-size: 24px;
     color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     line-height: 50px;
 }
 
 
 /********************************************/
+
 
 /*footer*/
 
@@ -320,4 +329,272 @@ footer {
     border-top-color: #4aaaa5;
     border-top-width: 5px;
     z-index: 1;
+    font-size: 10px;
+}
+
+
+/* -------------MEDIA QUERIES------------------ */
+
+@media screen and (max-width: 980px) {
+    .nav-list {
+        margin-right: 40px;
+    }
+    /* main container for about, portfolio, and contact pages */
+    .wrapper {
+        width: 960px;
+        top: 22%;
+        left: 25%;
+        margin: -100px 0 0 -245px;
+    }
+    section {
+        padding: 15px;
+    }
+    /* about me page */
+    .container {
+        width: 510px;
+        margin: 0 15px 0 70px;
+    }
+    .about-body {
+        line-height: 28px;
+    }
+    .profile-img {
+        width: 100%;
+    }
+    /* portfolio page */
+    figure img {
+        width: 510px;
+        height: 335px;
+    }
+    figure img:hover {
+        width: 506px;
+        height: 331px;
+    }
+    .portfolio-img1 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img2 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img3 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img4 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img5 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-banner-left {
+        width: 510px;
+        bottom: -325px;
+    }
+    .portfolio-banner-right {
+        width: 510px;
+        bottom: -325px;
+        left: 0;
+    }
+    /* contact page */
+    form {
+        padding: 15px;
+        width: 525px;
+        margin-left: 70px;
+    }
+    input[type=text] {
+        width: 505px;
+    }
+    input[type=email] {
+        width: 505px;
+    }
+    textarea {
+        width: 505px;
+        max-width: 505px;
+    }
+}
+
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 768px) {
+    #user-heading {
+        left: 15px;
+    }
+    .nav-list {
+        margin-right: 0;
+    }
+    /* main container for about, portfolio, and contact pages */
+    .wrapper {
+        position: absolute;
+        width: 805px;
+        z-index: 1;
+        top: 22%;
+        left: 25%;
+        margin: -100px 0 0 -245px;
+    }
+    /* connect with me section */
+    .connect {
+        width: 710px;
+        margin-left: 70px;
+    }
+    .connect-header {
+        text-align: left;
+    }
+    .icons {
+        margin: 0;
+    }
+    /* about me page */
+    .container {
+        width: 710px;
+        margin: 0 15px 15px 70px;
+    }
+    .profile-img {
+        width: 40%;
+    }
+    /* portfolio page */
+    figure img {
+        width: 340px;
+        height: 225px;
+    }
+    figure img:hover {
+        width: 336px;
+        height: 221px;
+    }
+    .portfolio-img1 {
+        margin: 10px 15px 15px 0;
+    }
+    .portfolio-img2 {
+        margin: 10px 0 15px 15px;
+    }
+    .portfolio-img3 {
+        margin: 10px 15px 15px 0;
+    }
+    .portfolio-img4 {
+        margin: 10px 0 15px 15px;
+    }
+    .portfolio-img5 {
+        margin: 10px 15px 15px 0;
+    }
+    .portfolio-banner-left {
+        width: 340px;
+        bottom: -220px;
+    }
+    .portfolio-banner-right {
+        width: 340px;
+        bottom: -220px;
+        left: 15px;
+    }
+    /* contact page */
+    form {
+        width: 710px;
+        margin: 0 0 15px 70px;
+    }
+    input[type=text] {
+        width: 686px;
+    }
+    input[type=email] {
+        width: 686px;
+    }
+    textarea {
+        width: 686px;
+        max-width: 686px;
+    }
+}
+
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 640px) {
+    #user-heading {
+        position: static;
+        padding: 18px;
+        width: 100%;
+        min-width: 331px;
+    }
+    .nav-heading {
+        position: static;
+        width: 100%;
+        min-width: 331px;
+    }
+    .nav-list {
+        transform: rotate(180deg);
+        overflow: hidden;
+        margin: 0;
+        float: none;
+        width: 100%;
+        min-width: 331px;
+    }
+    .nav-list>li {
+        transform: rotate(180deg);
+    }
+    .nav-list li {
+        float: left;
+        width: 33.3%
+    }
+    /* main container for about, portfolio, and contact pages */
+    .wrapper {
+        position: static;
+        width: 624px;
+        overflow: scroll;
+        z-index: 1;
+        margin: 15px -25px;
+        padding-bottom: 25px;
+    }
+    /* connect with me section */
+    .connect {
+        width: 524px;
+        margin: 0 0 30px 70px;
+    }
+    /* about me page */
+    .container {
+        width: 524px;
+    }
+    .profile-img {
+        width: 100%;
+    }
+    /* portfolio page */
+    figure img {
+        width: 524px;
+        height: 345px;
+    }
+    figure img:hover {
+        width: 520px;
+        height: 341px;
+    }
+    .portfolio-img1 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img2 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img3 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img4 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-img5 {
+        margin: 10px 0 15px 0;
+    }
+    .portfolio-banner-left {
+        width: 524px;
+        bottom: -325px;
+    }
+    .portfolio-banner-right {
+        width: 524px;
+        bottom: -325px;
+        left: 0;
+    }
+    /* contact page */
+    form {
+        width: 524px;
+    }
+    input[type=text] {
+        width: 494px;
+    }
+    input[type=email] {
+        width: 494px;
+    }
+    textarea {
+        width: 494px;
+        max-width: 494px;
+    }
 }
